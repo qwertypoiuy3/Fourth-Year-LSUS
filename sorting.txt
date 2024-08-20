@@ -1,0 +1,7 @@
+(display "Displays all numbers that are less than five in (3 9 5 8 2 4 7):")
+(newline)
+(display (filter (lambda (x) (< x 5)) '(3 9 5 8 2 4 7)))
+(newline) (newline)
+(display "Displays all numbers that are odd in (3 9 5 8 2 4 7):")
+(newline)
+(display (filter odd? '(3 9 5 8 2 4 7)))

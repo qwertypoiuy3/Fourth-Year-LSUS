@@ -1,0 +1,11 @@
+; hello with name
+(define hello
+  (lambda (name)
+    (string-append "Hello " name "!")))
+(display (hello "jo")) (newline)
+
+; sum of three numbers
+(define sum3
+  (lambda (a b c)
+    (+ a b c)))
+(display (sum3 10 10 10))

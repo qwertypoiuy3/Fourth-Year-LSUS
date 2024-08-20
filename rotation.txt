@@ -1,0 +1,13 @@
+(define (rotate-once ls)
+  (append (cdr ls) (list (car ls))))
+
+(define (rotate-helper ls remaining)
+  (if (null? remaining)
+      '()
+      (cons ls (rotate-helper (rotate-once ls) (cdr remaining)))))
+  
+  
+(define (rotate ls) (rotate-helper ls ls))
+
+(display (rotate '(a b c d e)))
+(newline)
